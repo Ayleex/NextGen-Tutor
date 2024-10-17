@@ -1,0 +1,126 @@
+.background img {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  opacity: 0.4;
+  }
+ .wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper ul{
+    list-style: none;
+    margin-top: 1PX;
+    display: inline-block;
+}
+.wrapper ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.wrapper ul li a::after{
+    content: '';
+    width: 5%;
+    height: 3px;
+    background: cadetblue;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.wrapper ul li a:hover::after{
+    width: 100%;
+}
+.wrapper ul li{
+    background: transparent;
+    width: 170px;
+    border: none;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+.wrapper ul li:hover{
+    background: transparent;
+}
+.wrapper ul ul{
+    display: none;
+}
+.wrapper ul li:hover > ul{
+    display: block;
+}
+.wrapper ul ul ul{
+    margin-left: 170px;
+    top: 0;
+    position: absolute;
+}
+.row {
+    display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+	justify-content: center;
+}
+.epp-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.epp-col{
+    flex-basis: 25%;
+    background: #FFF;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+	height: 18vh;
+	width: 20vw;
+	display: flex; 
+    justify-content: center;
+    align-items: center;
+	cursor: pointer;
+    border: 5px solid #45B6FE;
+    outline: none; 
+}
+.epp-col:hover{
+    background: #45B6FE;
+}
+.epp-col:active {
+	background: #45B6FE;
+}
+.button{
+    position: relative;
+    border: 0;
+    display: inline-block;
+    width: 12rem;
+    height: auto;
+    outline: auto;
+    vertical-align: middle;
+    background: transparent;
+}
+h2 {
+	color: #3792CB;
+}
+
+h1 {
+	color: #FFF;
+	text-align: center;
+	font-size: 35px;
+}
+h2 {
+	font-size: 25px;
+	text-align: center;
